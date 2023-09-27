@@ -36,13 +36,14 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
+  min-width: 325px;
   font-size: 15px;
   font-weight: 400;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
+  min-height: 200vh;
 }
 
 .container {
@@ -51,6 +52,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 /* width 325 heiths 445 */
 .card {
@@ -148,10 +150,12 @@ img {
 
 @media screen and (min-width: 750px) {
   body {
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
   }
   .container {
     flex-direction: row;
